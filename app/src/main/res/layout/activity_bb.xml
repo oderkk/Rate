@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BbActivity">
+    <TextView
+        android:id="@+id/rmbshow"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Hellow"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rmb" />
+
+    <EditText
+        android:id="@+id/rmb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="input RMB"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/dollar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="dollar"
+        android:onClick="toRMB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rmbshow" />
+
+    <Button
+        android:id="@+id/euro"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="euro"
+        android:onClick="toRMB"
+        app:layout_constraintStart_toStartOf="@+id/dollar"
+        app:layout_constraintTop_toBottomOf="@+id/dollar" />
+
+    <Button
+        android:id="@+id/won"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="WON"
+        android:onClick="toRMB"
+        app:layout_constraintStart_toStartOf="@+id/euro"
+        app:layout_constraintTop_toBottomOf="@+id/euro" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="CONFIG"
+        android:layout_marginTop="20dp"
+        android:onClick="open"
+        app:layout_constraintStart_toStartOf="@+id/won"
+        app:layout_constraintTop_toBottomOf="@+id/won" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
